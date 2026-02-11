@@ -1,4 +1,5 @@
-import "./App.css";
+// import "./App.css";
+import "./ui/ui.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import StartPage from "./pages/StartPage";
 import IntermediaPage from "./pages/IntermediaPage";
