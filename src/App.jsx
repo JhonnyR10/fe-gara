@@ -5,15 +5,19 @@ import StartPage from "./pages/StartPage";
 import IntermediaPage from "./pages/IntermediaPage";
 import StopPage from "./pages/StopPage";
 import ClassificaPage from "./pages/ClassificaPage";
+import GestioneGarePage from "./pages/GestioneGarePage";
+import ClassificaPubblica from "./pages/ClassificaPubblica";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<GestioneGarePage />} />
         <Route path="/start" element={<StartPage />} />
         <Route path="/intermedia/:ordine" element={<IntermediaPage />} />
         <Route path="/stop" element={<StopPage />} />
         <Route path="/classifica/:garaId" element={<ClassificaPage />} />
+        <Route path="/classifica-pubblica" element={<ClassificaPubblica />} />
       </Routes>
     </BrowserRouter>
   );
